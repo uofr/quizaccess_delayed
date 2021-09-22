@@ -41,7 +41,7 @@ $string['quizaccess_delayed_maxdelay'] = 'Maximum delay (minutes)';
 $string['quizaccess_delayed_timelimitpercent'] = 'Maximum delay as a percentage of completion time';
 $string['quizaccess_delayed_notice'] = 'Notice to students';
 $string['quizaccess_delayed_notice_desc'] = 'This text is shown to all students in addition to the text the teacher uses as a description of the activity. It is designed to display an institutional message, usually related to instructions on how to use the quizzes.';
-$string['quizaccess_delayed_teachernotice'] = 'This quiz will use a phased entry control, which will cause students to enter randomly with up to {$a} minutes of delay.';
+$string['quizaccess_delayed_teachernotice'] = 'This quiz is configured to use a phased entry control, which will cause students to enter randomly, with up to a maximum of {$a} minutes of delay.';
 $string['quizaccess_delayed_teachernotice2'] = 'Message for the Teacher: Your students will see the following message while waiting:';
 $string['quizaccess_delayed_countertype'] ='Type of coundown to use.';
 $string['pleasewait'] = 'Please wait here';
@@ -49,10 +49,10 @@ $string['noscriptwarning'] = 'This quiz requires a browser that supports JavaScr
 $string['pluginname_desc'] = 'Auto activate quiz attempt button with random delay access rule';
 $string['pluginname'] = 'Entry to quiz attempt with random delay';
 $string['delayedattemptlock'] = 'Gradual entry to the quiz';
-$string['delayedattemptlock_help'] = 'When enabled, on loading the quiz page before the quiz start date the start attempt button is disabled transiently.
-A countdown period is started (random up to a time set up by your institution). When the countdown ends the start attempt button is re-enabled and the students can initiate the quiz attempt. ';
+$string['delayedattemptlock_help'] = 'When enabled, upon loading the quiz page prior to the quiz start date and time, the start attempt button is disabled.
+A countdown period is started at the time of the quiz (randomly assigned, up to a time set up by your institution). When this countdown ends, the start attempt button is re-enabled and the student can then initiate the quiz attempt.';
 $string['explaindelayedattempt'] = 'Sets a random access delay';
-$string['tooshortpagesadvice'] = 'The questionnaire has {$a->pages} pages that are too short. This increases the load on the server severely. Consider alloting more time for each page (i.e. putting more questions)';
-$string['tooshorttimeguardadvice'] = 'An availability time of {$a->timespanstr} is too tight. Please note that some students will be delayed by up to {$a->maxdelaystr}, they have {$a->timelimitstr} to take the test and it is advisable to leave a safety margin for other delays at the start of the quiz.';
+$string['tooshortpagesadvice'] = 'This quiz has {$a->pages} pages that may be too short and could increase the load on the server. Consider allowing more questions per page where possible, while keeping in mind that essay questions should be limited to one question per page.';
+$string['tooshorttimeguardadvice'] = 'The open and close time for your quiz allows {$a->timespanstr}, while the time limit for your exam is set to {$a->timelimitstr}. Please note that some students will be delayed by up to {$a->maxdelaystr}. Consider adjusting the timing of your quiz to allow sufficient time for your students to complete their exam. It is recommended to leave a safety margin in case of unexpected delays that could occur at the start of the quiz.';
 $string['flipdowncounter'] = 'Animated card counter';
 $string['plaintextcounter'] = 'Plain text counter';
