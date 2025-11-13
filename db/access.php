@@ -17,20 +17,11 @@
 /**
  * Capability definitions for the quiz makeexamlok access rule.
  *
- * @package   quiz_delayed
+ * @package   quizaccess_delayed
  * @copyright 2014 Enrique Castro @ ULPGC
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
-// TODO: this capability is not used!
-$capabilities = array(
-    'quiz/delayed:exempt' => array(
-        'captype' => 'read',
-        'contextlevel' => CONTEXT_MODULE,
-        'archetypes' => array(
-            'editingteacher' => CAP_ALLOW,
-            'manager' => CAP_ALLOW
-        ),
-    ),
-);
+$capabilities = [
+];
