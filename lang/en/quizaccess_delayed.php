@@ -29,8 +29,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptquiz'] = 'Attempt quiz now';
 $string['delayedattemptlock'] = 'Gradual entry to the quiz';
-$string['delayedattemptlock_help'] = 'When enabled, on loading the quiz page before the quiz start date the start attempt button is disabled transiently.
-A countdown period is started (random up to a time set up by your institution). When the countdown ends the start attempt button is re-enabled and the students can initiate the quiz attempt. ';
+$string['delayedattemptlock_help'] = 'When enabled, upon loading the quiz page prior to the quiz start date and time, the start attempt button is disabled.
+A countdown period is started at the time of the quiz (randomly assigned, up to a time set up by your institution). When this countdown ends, the start attempt button is re-enabled and the student can then initiate the quiz attempt.';
 $string['explaindelayedattempt'] = 'Sets a random access delay';
 $string['flipdowncounter'] = 'Animated card counter';
 $string['noscriptwarning'] = 'This quiz requires a browser that supports JavaScript. If you have a Javascript blocker you will need to disable it.';
@@ -54,11 +54,11 @@ $string['quizaccess_delayed_sitewidecount'] = 'Use site-wide student count for r
 $string['quizaccess_delayed_sitewidecount_desc'] = 'If enabled, the rate of students potentially to start the quiz will be calculated using all quizzes starting at the same time in the site. If disabled, only students enrolled in the course will be counted.';
 $string['quizaccess_delayed_startrate'] = 'Entry rate (students per minute)';
 $string['quizaccess_delayed_startrate_desc'] = 'This is the average number of students per minute that your servers can handle to start the quiz. A low number will cause long delays but will reduce the load on the server. A high number will cause short delays but may overload the server if many students try to start at the same time. You must do some benchmarking on your site.';
-$string['quizaccess_delayed_teachernotice'] = 'This quiz will use a phased entry control, which will cause students to enter randomly with up to {$a} minutes of delay.';
+$string['quizaccess_delayed_teachernotice'] = 'This quiz is configured to use a phased entry control, which will cause students to enter randomly, with up to a maximum of {$a} minutes of delay.';
 $string['quizaccess_delayed_teachernotice2'] = 'Message for the Teacher: Your students will see the following message while waiting:';
 $string['quizaccess_delayed_timelimitpercent'] = 'Maximum delay as a percentage of completion time';
 $string['quizaccess_delayed_timelimitpercent_desc'] = 'If the quiz has a time limit, this setting will be used to calculate the maximum delay as a percentage of the time limit. The actual maximum delay will be the minimum of this value and the value set in "Maximum delay (minutes)". This allows to set a maximum delay relative to the time limit of the quiz. For example, if you set this value to 10% and the quiz has a time limit of 60 minutes, the maximum delay will be 6 minutes. If the quiz has no time limit, this setting is ignored.';
 $string['quizwillstartinabout'] = 'Your turn for this quiz will start in about';
 $string['quizwillstartinless'] = 'Your turn for this quiz will start in less than a minute';
-$string['tooshortpagesadvice'] = 'The questionnaire has {$a->pages} pages that are too short. This increases the load on the server severely. Consider alloting more time for each page (i.e. putting more questions)';
-$string['tooshorttimeguardadvice'] = 'An availability time of {$a->timespanstr} is too tight. Please note that some students will be delayed by up to {$a->maxdelaystr}, they have {$a->timelimitstr} to take the test and it is advisable to leave a safety margin for other delays at the start of the quiz.';
+$string['tooshortpagesadvice'] = 'This quiz has {$a->pages} pages that may be too short and could increase the load on the server. Consider allowing more questions per page where possible, while keeping in mind that essay questions should be limited to one question per page.';
+$string['tooshorttimeguardadvice'] = 'The open and close time for your quiz allows {$a->timespanstr}, while the time limit for your exam is set to {$a->timelimitstr}. Please note that some students will be delayed by up to {$a->maxdelaystr}. Consider adjusting the timing of your quiz to allow sufficient time for your students to complete their exam. It is recommended to leave a safety margin in case of unexpected delays that could occur at the start of the quiz.';
